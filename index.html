@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAA Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/india2023-bold" rel="stylesheet">
+    <link rel="icon" href="logo-png.png" style="border-radius: 50%;">
+    <style>
+        /* General Reset */
+        body, h1, h2, p, table, th, td, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(45deg, #007acc, #00d4ff);
+            color: white;
+            padding: 1rem;
+        }
+
+        .webHead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .webHead h1 {
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #ffa500;
+        }
+
+        /* Introduction Section */
+        .Introduction {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Styling */
+        .table {
+            margin: 2rem auto;
+            width: 90%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        thead {
+            background-color: #007acc;
+            color: white;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        /* Applications Section */
+        .applications {
+            margin: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .scroll-item {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+
+        .scroll-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="webHead">
+             <img src="logo-png.png" alt="Team Logo" style="height: 4.5rem; width: 4.5rem; border-radius: 50%; border: 4px solid aqua;">
+             <h1 id="Heading" style="font-family: 'INDIA2023', sans-serif;">ALGO</h1>
+             <img src="kletech.png" alt="kletech" style="height: 4rem; width: 4rem; border-radius: 5px;">
+        </div>
+        <nav class="navigation">
+            <a href="">Github Repository</a>
+            <a href="projectOverview.html">Project Overview</a>
+            <a href="">Business Cases</a>
+            <a href="courseReflection.html">Course Reflection</a>
+        </nav>
+    </header>
+    <main>
+        <section class="Introduction">
+            <h2 style="text-transform: uppercase;">Course Introduction</h2>
+            <p>This course centers on the design and analysis of algorithms, emphasizing their real-world applications. The primary objective is to equip students with the skills to design algorithms tailored to specific tasks, implement them effectively using appropriate data structures, and optimize their efficiency. By bridging theoretical foundations with practical applications, this course provides essential tools for solving a wide range of computational problems.</p>
+        </section>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>DS/Algorithms</th>
+                        <th>Subcategory</th>
+                        <th>Topics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Linear Structures</td>
+                        <td>Arrays</td>
+                        <td>1-dimensional, 2-dimensional</td>
+                    </tr>
+                    <tr>
+                        <td>Linked Lists</td>
+                        <td>Singly Linked List (SLL), Circular SLL, Doubly Linked List (DLL), Circular DLL</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Non-linear Structures</td>
+                        <td>Trees</td>
+                        <td>n-ary Trees, Binary Trees, Binary Search Trees, AVL Trees, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Graphs</td>
+                        <td>Weighted/Unweighted, Directed/Undirected</td>
+                    </tr>
+                    <tr>
+                        <td>Others</td>
+                        <td>Heaps, HashMaps, Union-Find (Disjoint Set Union)</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Algorithms</td>
+                        <td>Sorting Algorithms</td>
+                        <td>Bubble Sort, Merge Sort, Quick Sort, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>String Matching Algorithms</td>
+                        <td>Brute Force, Boyer-Moore, Knuth-Morris-Pratt (KMP), Rabin-Karp</td>
+                    </tr>
+                    <tr>
+                        <td>Graph Algorithms</td>
+                        <td>BFS, DFS, Kruskal’s Algorithm, Dijkstra’s Algorithm, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Backtracking Algorithms</td>
+                        <td>N-Queen Problem, Subset Generation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="applications">
+            <h2 style="text-transform: uppercase;">Real-World Application</h2>
+            <div class="scroll-container">
+                <div class="scroll-item">
+                    <img src="Sorting-Algorithms-in-Python-Merge-Sort-vs-Bubble-Sort_Watermarked.webp" alt="Sorting">
+                    <p><strong>Sorting and Searching</strong>: Used in e-commerce platforms and databases.</p>
+                </div>
+                <div class="scroll-item">
+                    <img src="Graphs.webp" alt="Graphs">
+                    <p><strong>Graph Algorithms</strong>: Social networks, navigation systems.</p>
+                </div>
+                <div class="scroll-item">
+                    <img src="network.webp" alt="Network">
+                    <p><strong>Network Routing</strong>: Used in routing protocols for data transmission.</p>
+                </div>
+                <div class="scroll-item">
+                    <img src="finance.jpeg" alt="Finance">
+                    <p><strong>Finance</strong>: Real-time data analysis, predictive analytics, fraud detection.</p>
+                </div>
+                <div class="scroll-item">
+                    <img src="taskhandling.png" alt="Task Handling">
+                    <p><strong>Task Handling</strong>: Heaps used in priority queues.</p>
+                </div>
+            </div>
+        </div>
+        <div class="End">
+            <h2 style="text-transform: uppercase;">Github Repository</h2>
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>User interface design and visualization.</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Implementation of algorithms and data integration.</td>
+                    </tr>
+                    <tr>
+                        <td>Algorithms</td>
+                        <td>Optimization for smart city planning.</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Datasets for testing and validation.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div style="display: flex; justify-content: space-evenly;">
+            <div class="contact-info">
+                <p>Contact us:</p>
+                <p>Email: <a href="mailto:01fe23bcs264@kletech.ac.in">01fe23bcs264@kletech.ac.in</a></p>
+                <p>Mobile: <a href="tel:+917483377339">+91-9986057071</a></p>
+            </div>
+            <div class="contact-info">
+                <p>Contact us:</p>
+                <p>Email: <a href="mailto:01fe23bcs274@kletech.ac.in">01fe23bcs274@kletech.ac.in</a></p>
+                <p>Mobile: <a href="tel:+917204967112">+91-7204967112</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 DAA Course Project. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
